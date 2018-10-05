@@ -12,7 +12,7 @@ class FullScreenImageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_screen_image)
 
-        supportActionBar!!.hide()
+        supportActionBar?.hide()
         val link = intent.getStringExtra("image")
 
         Picasso.get()
