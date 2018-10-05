@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="show_images">Show Images</string>
+    <string name="fetch_contacts">Fetch contacts</string>
+</resources>
