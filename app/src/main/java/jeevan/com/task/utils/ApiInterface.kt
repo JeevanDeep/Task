@@ -2,7 +2,7 @@ package jeevan.com.task.utils
 
 import android.util.Log
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import jeevan.com.task.models.WorldPopulationModel
+import jeevan.com.task.model.WorldPopulationModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -39,7 +39,6 @@ interface ApiInterface {
         private fun provideOkHttpClient(): OkHttpClient {
             return OkHttpClient.Builder()
                     .addInterceptor(provideHttpLoggingInterceptor())
-
                     .build()
         }
     }

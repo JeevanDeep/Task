@@ -1,4 +1,4 @@
-package jeevan.com.task.models
+package jeevan.com.task.model
 
 data class  Worldpopulation(
         val rank: Int,

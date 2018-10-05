@@ -1,4 +1,4 @@
-package jeevan.com.task.activities
+package jeevan.com.task.activity
 
 import android.os.Bundle
 import android.os.Environment
@@ -10,11 +10,10 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import jeevan.com.task.R
-import jeevan.com.task.models.ContactModel
+import jeevan.com.task.model.ContactModel
 import jeevan.com.task.utils.CsvWriter
 import kotlinx.android.synthetic.main.activity_contact_list.*
 import org.jetbrains.anko.indeterminateProgressDialog
-import org.jetbrains.anko.toast
 import java.io.File
 
 class ContactListActivity : AppCompatActivity() {

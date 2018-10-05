@@ -1,7 +1,7 @@
 package jeevan.com.task.utils
 
 import android.os.Environment
-import jeevan.com.task.models.ContactModel
+import jeevan.com.task.model.ContactModel
 import java.io.*
 import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream

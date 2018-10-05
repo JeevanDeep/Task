@@ -1,4 +1,4 @@
-package jeevan.com.task.activities
+package jeevan.com.task.activity
 
 import android.Manifest
 import android.content.Intent
@@ -10,7 +10,7 @@ import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener
 import jeevan.com.task.R
-import jeevan.com.task.activities.imageTask.ImagesListActivity
+import jeevan.com.task.activity.imageTask.ImagesListActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 

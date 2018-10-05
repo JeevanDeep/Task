@@ -1,24 +1,23 @@
-package jeevan.com.task.activities.imageTask
+package jeevan.com.task.activity.imageTask
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.ActivityOptionsCompat
+import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import jeevan.com.task.R
-import jeevan.com.task.adapters.ImageAdapter
-import jeevan.com.task.models.WorldPopulationModel
+import jeevan.com.task.adapter.ImageAdapter
+import jeevan.com.task.model.WorldPopulationModel
 import jeevan.com.task.utils.ApiInterface
 import jeevan.com.task.utils.OnItemClickListener
 import jeevan.com.task.utils.addOnItemClickListener
 import kotlinx.android.synthetic.main.activity_images_list.*
 import org.jetbrains.anko.indeterminateProgressDialog
-import android.support.v4.view.ViewCompat
-import android.support.v4.app.ActivityOptionsCompat
-import android.view.Display
-import io.reactivex.disposables.Disposable
 
 
 class ImagesListActivity : AppCompatActivity() {
@@ -48,7 +47,7 @@ class ImagesListActivity : AppCompatActivity() {
     }
 
     private fun initAdapter(model: WorldPopulationModel) {
-        val imageAdapter = ImageAdapter(this, model)
+        val imageAdapter = ImageAdapter(this, model.worldpopulation)
 
         recyclerview.apply {
             adapter = imageAdapter
@@ -61,8 +60,8 @@ class ImagesListActivity : AppCompatActivity() {
                 val link = imageAdapter.getItemAtPosition(position).flag
 
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this@ImagesListActivity,
-                        view.findViewById(R.id.imageView),
-                        ViewCompat.getTransitionName(view.findViewById(R.id.imageView)) ?: "")
+                        view.findViewById(R.id.ivFlag),
+                        ViewCompat.getTransitionName(view.findViewById(R.id.ivFlag)) ?: "")
 
 
                 intent.putExtra("image", link)

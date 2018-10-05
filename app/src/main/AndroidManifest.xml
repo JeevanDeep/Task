@@ -13,16 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.imageTask.ImagesListActivity" />
-        <activity android:name=".activities.imageTask.FullScreenImageActivity" />
-        <activity android:name=".activities.ContactListActivity" />
+        <activity android:name=".activity.imageTask.ImagesListActivity" />
+        <activity android:name=".activity.imageTask.FullScreenImageActivity" />
+        <activity android:name=".activity.ContactListActivity" />
     </application>
 
 </manifest>

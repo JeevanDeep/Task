@@ -1,4 +1,4 @@
-package jeevan.com.task.activities.imageTask
+package jeevan.com.task.activity.imageTask
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -17,7 +17,7 @@ class FullScreenImageActivity : AppCompatActivity() {
 
         Picasso.get()
                 .load(link)
-                .into(imageView)
+                .into(ivFlag)
 
         closeImage.setOnClickListener {
             supportFinishAfterTransition()
